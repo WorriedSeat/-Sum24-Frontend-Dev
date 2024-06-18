@@ -273,7 +273,7 @@ li{
 
 #closePopupBtn{
     position: absolute;
-    margin-left: 31%;
+    margin-left: 42.5%;
     bottom: 20px;
     font-family: TD Mars;
     font-size: 15px;
@@ -290,7 +290,15 @@ li{
     background-color: white;
 }
 
-
+#comicDate{
+    text-align: right;
+    margin-right: 5%;
+    font-family: TD Mars;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
 
 
 
