@@ -17,9 +17,9 @@ async function fetchComic(){
         })
         .then(data =>{
             const comicTitle = `<p id='comicTitle'>${data.safe_title}</p>`
-            const comicDate = new Date(Date.UTC(Number(data.year), Number(data.month), Number(data.day), 0, 0, 0))
+            const comicDate = `<p id='comicDate'>${new Date(Date.UTC(Number(data.year), Number(data.month), Number(data.day), 0, 0, 0)).toLocaleDateString("en-GB")}</p>`
             const comicPic = `<img src=${data.img} alt=${data.alt} id='comicPic'></img>`
-            document.querySelector('.myPopup').insertAdjacentHTML('afterbegin', comicDate.toLocaleDateString("en-GB"))
+            document.querySelector('.myPopup').insertAdjacentHTML('afterbegin', comicDate)
             document.querySelector('.myPopup').insertAdjacentHTML('afterbegin', comicPic)
             document.querySelector('.myPopup').insertAdjacentHTML('afterbegin', comicTitle)
         }) 
