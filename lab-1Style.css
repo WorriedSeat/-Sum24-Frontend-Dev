@@ -1,3 +1,6 @@
+/* 
+Main stuff
+*/
 
 @font-face {
     font-family: "TD Mars";
@@ -22,11 +25,15 @@ body {
     overflow-x: hidden;
 }
 
+
+/* 
+Top-images incuding header
+*/
+
 #topImg{
     width: 100%;
     height: 10%;
 }
-
 
 .baseLink{
     color: rgb(230, 230, 230);
@@ -101,10 +108,9 @@ header{
 }
 
 
-
-
-
-
+/* 
+All contents
+*/
 
 .content1{
     min-height: 1000px;
@@ -150,7 +156,7 @@ header{
     padding-top: 2%;
 }
 
-#info{
+.info{
     font-family: object;
     font-size: 21px;
     color: rgb(29, 29, 29);
@@ -203,6 +209,9 @@ li{
 }
 
 
+/* 
+Additional head to go to popup window
+*/
 
 #ComicHead{
     position: absolute;
@@ -301,9 +310,9 @@ li{
 }
 
 
-
-
-
+/* 
+Footer
+*/
 
 footer{
     background-image: url(Images/pics/footerBack.png);
