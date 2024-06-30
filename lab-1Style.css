@@ -309,7 +309,26 @@ Additional head to go to popup window
     -webkit-text-stroke-width: 0.5px;
 }
 
+#comicDateFrom{
+    text-align: right;
+    margin-right: 5%;
+    font-family: TD Mars;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
 
+#wasReleased{
+    text-align: left;
+    margin-top: -4%;
+    margin-left: 5%;
+    font-family: TD Mars;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
 /* 
 Footer
 */
