@@ -1,0 +1,357 @@
+/* 
+Main stuff
+*/
+
+@font-face {
+    font-family: "TD Mars";
+    src: local("TD Mars"), url(fonts/TD\ Mars.otf);
+}
+
+@font-face {
+    font-family: "EuphoriaParty";
+    src: local("EuphoriaParty"), url(fonts/EuphoriaParty.ttf);
+}
+
+@font-face {
+    font-family: "object";
+    src: local("object"), url(fonts/object.ttf);
+}
+
+body {
+    background: white;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* 
+Top-images incuding header
+*/
+
+#topImg{
+    width: 100%;
+    height: 10%;
+}
+
+.baseLink{
+    color: rgb(230, 230, 230);
+    border-bottom: 0px;
+    text-decoration: none;
+    font-family: TD Mars;
+    font-size: 25px;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 2px; 
+}
+
+.baseLink:hover{
+    color: white;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 2px; 
+}
+
+header{
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    margin-top: 0px;
+    height: 100px;
+    z-index: 1;
+    width: 100%;
+    margin-top: -0.5%;
+}
+
+#header{
+    position:relative;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+#nav_text{
+    padding-top: 33px;
+    padding-left: 10%;
+}
+
+#portfolio{
+    margin-left: 50%;
+}
+
+#photos{
+    margin-left: 4%;
+}
+
+.topLink{
+    font-family: EuphoriaParty;
+    color: rgb(230, 230, 230);
+    height: 80%;
+    font-size: 100px;
+    text-decoration: none;
+    -webkit-text-stroke: rgb(29, 29, 29);
+    -webkit-text-stroke-width: 0.5px;
+    border-bottom: 0px;
+}
+
+#name{
+    z-index: 2;
+    position: absolute;
+    margin-bottom: 0px;
+    margin-top: -78px;
+    margin-left: 44%;  
+}
+
+#surname{
+    z-index: 2;
+    position: absolute;
+    padding-top: 22px;
+    margin-top: 0px;
+    margin-left: 38%;
+}
+
+
+/* 
+All contents
+*/
+
+#root{
+    min-height: 1000px;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(230, 230, 230);
+}
+
+#man{
+    padding-top: 22%;
+    height: 550px;
+    width: 700px;
+    position: absolute;
+
+}
+
+#infoTitle{
+    font-family: TD Mars;
+    font-size: 60px;
+    color: rgb(29, 29, 29);
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 0.5px;
+    padding-top: 10%;
+    text-align: center;
+}
+
+#mainInfo{
+    padding-left: 50%;
+    padding-top: 2%;
+}
+
+.info{
+    font-family: object;
+    font-size: 21px;
+    color: rgb(29, 29, 29);
+}
+
+
+.images{
+    margin-left: -4%;
+    padding-top: 11%;
+    object-fit: contain;
+}
+
+#Photos{
+    padding-left: -50%;
+    width: 1600px;
+    height: 800px;
+}
+
+#intro{
+    padding-top: 13%;
+    font-family: TD Mars;
+    font-size: 35px;
+    color: rgb(29, 29, 29);
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+#reposList{
+    padding-top: 5%;
+    margin-bottom: 0%;
+}
+
+li{
+    list-style-type: none
+}
+
+.reposTitle{
+    font-family: object;
+    font-size: 18px;
+    color: rgb(29, 29, 29);
+}
+
+.repos{
+    margin-bottom: 5%;
+}
+
+#lastRepoText{
+    margin-bottom: 0px;
+}
+
+.reposText{
+    font-family: object;
+    font-size: 15px;
+    color: rgb(29, 29, 29);
+}
+
+
+/* 
+Additional head to go to popup window
+*/
+
+#ComicHead{
+    position: absolute;
+    bottom: -169%;
+    right: 0px;
+}
+
+#HeadPic{
+    width: 400px;
+    height: 250px;
+}
+
+#openPopupBtn{
+    position: absolute;
+    bottom: -169%;
+    right: 0px;
+    margin-bottom: 35px;
+    margin-right: 77px;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#openPopupBtn:hover{
+    background-color: darkred;
+}
+
+.myPopup{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 1300px;
+    background-color: rgb(29, 29, 29);
+    border: 2px solid black;
+    border-radius: 7px;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.show {
+    display: block;
+}
+
+#comicTitle{
+    display: flex;
+    justify-content: center;
+    font-family: TD Mars;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+#comicPic{
+    display: flex;
+    /* justify-self: center; */
+    padding-left: 3.25%;
+}
+
+#closePopupBtn{
+    position: absolute;
+    margin-left: 42.5%;
+    bottom: 20px;
+    font-family: TD Mars;
+    font-size: 15px;
+    color: rgb(29, 29, 29);
+    background-color: rgb(230, 230, 230);
+    border: 2px solid white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10rem;
+
+}
+
+#closePopupBtn:hover{
+    background-color: white;
+}
+
+#comicDate{
+    text-align: right;
+    margin-right: 5%;
+    font-family: TD Mars;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+#comicDateFrom{
+    text-align: right;
+    margin-right: 5%;
+    font-family: TD Mars;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+#wasReleased{
+    text-align: left;
+    margin-top: -4%;
+    margin-left: 5%;
+    font-family: TD Mars;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+}
+/* 
+Footer
+*/
+
+footer{
+    background-image: url(Images/pics/footerBack.png);
+    height: 120px;
+}
+
+.link{
+    height: 5%;
+    width: 5%;
+    display: inline-block;  
+    margin-top: 25px;
+}
+
+.footerImage {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgb(29, 29, 29);
+}
+
+#tg{
+    margin-right: 5%;
+}
+
+#email{
+    margin-left: 5%;
+}
