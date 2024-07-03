@@ -13,7 +13,7 @@
       "forceConsistentCasingInFileNames": true,
     },
     "scripts": {
-    "build": "tsc"
+    "build": "./src/index.tsx"
     }
   }
   
