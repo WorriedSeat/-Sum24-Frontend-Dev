@@ -12,17 +12,13 @@ const elementHeader = document.getElementById('headerImage')
 const header = createRoot(elementHeader!)
 
 root.render(
-    <React.StrictMode>
         <BrowserRouter>
             <RouterComponent />
         </BrowserRouter>
-    </React.StrictMode>
 )
 
 header.render(
-    <React.StrictMode>
         <BrowserRouter>
             <RouterHeaderImage />
         </BrowserRouter>
-    </React.StrictMode>
 )
